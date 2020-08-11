@@ -1,0 +1,39 @@
+<div class="container-fluid">
+  <div class="col-md-12 col-ls-12">
+<h2>External User List</h2>
+<!-- <div>
+  <a href="javascript:;" routerLink="/login" class="btn btn-info" role="button" >LOGOUT</a>
+</div> -->
+<div class="pull-right">
+  <!-- <a href="javascript:;" routerLink="/user-register" class="btn btn-info" role="button" >+ Add User</a>&nbsp;&nbsp;  -->
+  <a href="javascript:;" (click)="logout()" class="btn btn-info" role="button" >LOGOUT</a>
+</div>
+<div>
+  <br><br>
+<!-- <div class="table-wrapper-scroll-y my-custom-scrollbar"> -->
+  <table class="table table-striped table-bordered table-sm ">
+    <thead>
+      <tr>
+        <th scope="col" width="5%">Sr No.</th>
+        <th scope="col">First Name</th>
+        <th scope="col">Last Name</th>
+        <th scope="col">Telephone No</th>
+        <th scope="col">Address</th>
+        <th scope="col">SSN</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of userList; let i = index">
+        <td scope="col">{{i+1}}</td>
+        <td scope="col">{{user.firstName}}</td>
+        <td scope="col">{{user.lastName}}</td>
+        <td scope="col">{{user.teleno}}</td>
+        <td scope="col">{{user.address}}</td>
+        <td scope="col">{{user.ssn}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<!-- </div> -->
+</div>
+</div>

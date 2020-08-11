@@ -1,0 +1,15 @@
+<div class="main">
+  <p class="sign" align="center">New User Registration</p>
+  <form class="form1" [formGroup]="registerForm" (ngSubmit)="saveUser()">
+    <input class="un " type="text" align="center" formControlName="firstName" placeholder="First Name" maxlength="15">
+    <input class="un" type="text" align="center" formControlName="lastName" placeholder="Last Name" maxlength="15">
+    <input class="un" type="text" align="center" formControlName="teleno" placeholder="Telephone Number" maxlength="15">
+    <input class="un" type="text" align="center" formControlName="address" placeholder="Address" maxlength="50">
+    <input class="un" type="text" align="center" formControlName="ssn" placeholder="SSN" maxlength="10">
+    <!-- <a class="submit" align="center">Sign in</a> -->
+    <input type="submit" value="Register" class="submit" align="center">
+    <!-- <p class="forgot" align="center"><a href="#">Forgot Password?</a></p> -->
+    
+  </form>   
+  <br> <br>      
+  </div>
